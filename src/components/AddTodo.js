@@ -9,7 +9,12 @@ export const AddTodo = (props) => {
     if(!title || !desc){
       alert("Title or Description cannot be blank")
     }
+    else{
     props.addTodo(title,desc)
+    settitle("")
+    setdesc("")
+    alert("Task added successfully")
+    }
   }
   return (
     <div>
